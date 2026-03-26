@@ -4,7 +4,7 @@ from qdrant_client.models import VectorParams, Distance, PointStruct
 
 
 class QdrantStorage:
-    def __init__(self, url="http://localhost:6333", collection="docs", dim=3072):
+    def __init__(self, url="http://localhost:6333", collection="ubereats_restaurants", dim=768):
         self.client = QdrantClient(url=url, timeout=30)
         self.collection = collection
         if not self.client.collection_exists(self.collection):
@@ -23,17 +23,16 @@ class QdrantStorage:
         results = self.client.query_points(
             collection_name = self.collection,
             query_vector=query_vector,
-            with_payload=True,
+            # with_payload=True,
             limit=top_k
         )
         contexts = []
-        sources = set()
 
-        for r in results:
-            payload = getattr(r,"payload",None) or {}
+
+        for r in results.points:
+            payload = r.payload or {}
             text = payload.get("text","")
-            source = payload.get("source", "")
+            # source = payload.get("source", "")
             if text:
                 contexts.append(text)
-                sources.add(source)
-        return {"contexts": contexts, "sources": list(sources)}
+        return contexts
