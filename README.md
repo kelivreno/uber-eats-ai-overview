@@ -12,7 +12,7 @@ Flow:
 ```
 Query
     ↓
-Embed query (Ollama)
+Embed query (nomic-embed text)
     ↓
 Top-K retrieval from Qdrant vector DB
     ↓
