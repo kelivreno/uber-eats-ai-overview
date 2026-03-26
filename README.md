@@ -1,11 +1,25 @@
 # UberEats AI Overview
-A conversational search overview based on reviews, ratings, and categories. Much like Google AI Overview. I'm learning to build a RAG system retrieving from a Kaggle dataset from 2019 across all restaurants in America. 
+A natural language search system over 100,000+ US Uber Eats restaurants. 
+Ask questions like "cheap sushi in LA" or "best pizza under $15 in Chicago" 
+and get answers grounded in real menu and restaurant data.
 
-Link to dataset: https://www.kaggle.com/datasets/thedevastator/the-ubereats-restaurant-dataset-over-100000-us-r
+Built as a learning project on RAG systems.
+
+Covers: restaurant names, categories, price ranges, locations, 
+and menu items across the US.
 
 Flow:
 ```
-Query --> Top K Retrieval from Vector DB --> Response synthesis
+Query
+    ↓
+Embed query (Ollama)
+    ↓
+Top-K retrieval from Qdrant vector DB
+    ↓
+Retrieved context + query → LLM (Ollama)
+    ↓
+Natural language response
+
 ```
 
 
