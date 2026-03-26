@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9da8169f-f097-4f94-91de-699fa360102a" name="Changes" comment="Built ingest.py, clean and combine data, turns it into text, convert it into vectors (embeddings), then stores it in Gdrant( vector DB)">
+    <list default="true" id="9da8169f-f097-4f94-91de-699fa360102a" name="Changes" comment="Added query.py so that user can get answers, then improved vector_db.py">
       <change afterPath="$PROJECT_DIR$/data/restaurant-menus.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ubereats_streamlit_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +44,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.ingest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.overview.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.ingest.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.overview.executor": "Run",
+    "Python.query.executor": "Run",
+    "Python.vector_db.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -158,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774518494772</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Improved ingest.py,">
+      <option name="closed" value="true" />
+      <created>1774523566495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774523566495</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added query.py so that user can get answers, then improved vector_db.py">
+      <option name="closed" value="true" />
+      <created>1774524530374</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774524530374</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +186,8 @@
     <MESSAGE value="Changed LLM model" />
     <MESSAGE value="Updated code" />
     <MESSAGE value="Built ingest.py, clean and combine data, turns it into text, convert it into vectors (embeddings), then stores it in Gdrant( vector DB)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Built ingest.py, clean and combine data, turns it into text, convert it into vectors (embeddings), then stores it in Gdrant( vector DB)" />
+    <MESSAGE value="Improved ingest.py," />
+    <MESSAGE value="Added query.py so that user can get answers, then improved vector_db.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added query.py so that user can get answers, then improved vector_db.py" />
   </component>
 </project>
