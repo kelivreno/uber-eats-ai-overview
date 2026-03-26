@@ -11,14 +11,16 @@ class QdrantStorage:
             self.client.create_collection(
                 collection_name=self.collection,
                 vectors_config=VectorParams(size=dim,distance=Distance.COSINE),
-
             )
-    def upset(self,ids,vectors,payloads):
-        points = [PointStruct(id=ids[i],vector=vectors[i], payloads=payloads[i]) for i in range(len(ids))]
-        self.client.upsert(self.collection,points=points)
+    def upsert(self,ids,vectors,payloads):
+        points = [PointStruct(id=ids[i],vector=vectors[i], payload=payloads[i]) for i in range(len(ids)) ]
+        self.client.upsert(
+            collection_name = self.collection,
+            points=points
+        )
 
     def search(self, query_vector, top_k: int = 5 ):
-        results = self.client.search(
+        results = self.client.query_points(
             collection_name = self.collection,
             query_vector=query_vector,
             with_payload=True,
