@@ -43,7 +43,7 @@ Natural language response
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/yourusername/uber-eats-ai-overview.git
+git clone https://github.com/kelivreno/uber-eats-ai-overview.git
 cd uber-eats-ai-overview
 ```
 
