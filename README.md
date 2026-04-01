@@ -102,3 +102,6 @@ This project is focused on learning:
 - How vector databases enable semantic retrieval
 - How RAG systems combine retrieval and generation
 - How to build an end-to-end local AI application
+
+## UNPINNING THIS PROJECT:
+This is ai slop and tutoriall hell garbage that I built, I'm reiterating my scope to something realistic. I guess this is just me learning. 
